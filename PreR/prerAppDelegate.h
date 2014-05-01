@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "prerCustomCell.h"
+
+
 @interface prerAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

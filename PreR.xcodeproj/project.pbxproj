@@ -20,6 +20,9 @@
 		B44E86BF18F4A3590053A9DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B44E86BD18F4A3590053A9DE /* InfoPlist.strings */; };
 		B44E86C118F4A3590053A9DE /* PreRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B44E86C018F4A3590053A9DE /* PreRTests.m */; };
 		B44E86CD18F4A3C90053A9DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44E86CC18F4A3C90053A9DE /* Main.storyboard */; };
+		DDBA9D92190FA0B7008C0756 /* prerResultSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBA9D91190FA0B7008C0756 /* prerResultSelectController.m */; };
+		DDFDCD50190F709300A512AA /* prerCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFDCD4F190F709300A512AA /* prerCustomCell.m */; };
+		DDFDCD53190F72F500A512AA /* prerSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFDCD52190F72F500A512AA /* prerSearchResultsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,12 @@
 		B44E86BE18F4A3590053A9DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B44E86C018F4A3590053A9DE /* PreRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreRTests.m; sourceTree = "<group>"; };
 		B44E86CC18F4A3C90053A9DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DDBA9D90190FA0B7008C0756 /* prerResultSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prerResultSelectController.h; sourceTree = "<group>"; };
+		DDBA9D91190FA0B7008C0756 /* prerResultSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = prerResultSelectController.m; sourceTree = "<group>"; };
+		DDFDCD4E190F709300A512AA /* prerCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prerCustomCell.h; sourceTree = "<group>"; };
+		DDFDCD4F190F709300A512AA /* prerCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = prerCustomCell.m; sourceTree = "<group>"; };
+		DDFDCD51190F72F500A512AA /* prerSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prerSearchResultsViewController.h; sourceTree = "<group>"; };
+		DDFDCD52190F72F500A512AA /* prerSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = prerSearchResultsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +134,12 @@
 				B44E86A418F4A3590053A9DE /* InfoPlist.strings */,
 				B44E86A718F4A3590053A9DE /* main.m */,
 				B44E86A918F4A3590053A9DE /* PreR-Prefix.pch */,
+				DDBA9D90190FA0B7008C0756 /* prerResultSelectController.h */,
+				DDBA9D91190FA0B7008C0756 /* prerResultSelectController.m */,
+				DDFDCD4E190F709300A512AA /* prerCustomCell.h */,
+				DDFDCD4F190F709300A512AA /* prerCustomCell.m */,
+				DDFDCD51190F72F500A512AA /* prerSearchResultsViewController.h */,
+				DDFDCD52190F72F500A512AA /* prerSearchResultsViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -243,7 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDFDCD53190F72F500A512AA /* prerSearchResultsViewController.m in Sources */,
+				DDFDCD50190F709300A512AA /* prerCustomCell.m in Sources */,
 				B44E86A818F4A3590053A9DE /* main.m in Sources */,
+				DDBA9D92190FA0B7008C0756 /* prerResultSelectController.m in Sources */,
 				B44E86AC18F4A3590053A9DE /* prerAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +384,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PreR/PreR-Prefix.pch";
 				INFOPLIST_FILE = "PreR/PreR-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -379,6 +398,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PreR/PreR-Prefix.pch";
 				INFOPLIST_FILE = "PreR/PreR-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -400,6 +420,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "PreRTests/PreRTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -418,6 +439,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PreR/PreR-Prefix.pch";
 				INFOPLIST_FILE = "PreRTests/PreRTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -443,6 +465,7 @@
 				B44E86C618F4A3590053A9DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B44E86C718F4A3590053A9DE /* Build configuration list for PBXNativeTarget "PreRTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +474,7 @@
 				B44E86C918F4A3590053A9DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

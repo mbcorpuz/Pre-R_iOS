@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 #import "prerAppDelegate.h"
+#import "prerCustomCell.h"
+
 
 int main(int argc, char * argv[])
 {
